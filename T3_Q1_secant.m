@@ -6,7 +6,7 @@ i=2;
 
 output = zeros(1,2);
 
-actual_root = fzero('gx', 2.5);
+actual_root = fzero(fcn, 2.5);
 
 while abs(x(i) - x(i-1))>=tol&&i<N
     numerator = (x(i) - x(i-1)) * feval(fcn,x(i));
